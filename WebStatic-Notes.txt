@@ -1,0 +1,394 @@
+
+------------------HTML---------------------------------
+
+* Element = just the name of the tag it self.
+* Tag = the element surrounded with <> and usually the closing pair as well.
+* Attributes = Attributes are properties used to provide additional information about an element.
+	id : identifies an element
+	class : classifies an element
+	src : specifies a source for embeddable content
+	href : provides a hyperlink reference to a linked resource.
+	rel : The rel attribute specifies the relationship between the current 
+	      document and the linked document. Only used if the href attribute is present
+* Self-Closing Elements
+	<br>	<input>	<source>
+	<wbr>	<embed>	<link>	
+	<hr>	<meta>
+	<img>	<param>
+
+<!DOCTYPE html> informs web browsers which version of HTML is being used
+<html> signifies the beginning and end of the document.
+<head> identifies the top of the document including any metadata.
+<body> All of the visible content within the web page will fall within it
+<meta charset="utf-8"> the character encoding of the page
+<title> the title of the document
+<h1> includes a heading 
+<p> includes a paragraph
+<span> inline-level element
+<strong> and <b> To make text bold and place a strong importance on it (inline-level element) 
+<em> and <i> To italicize text, thereby placing emphasis on it (inline-level element)
+<header> element, like it sounds, is used to identify the top of a page
+<nav> element identifies a section of major navigational links on a page.
+<a> Miscellaneous one-off links should not be wrapped within 
+	the <nav> element they should use the anchor element (inline element)
+<article> element is used to identify a section of independent, self-contained content that may be independently distributed or reused
+<section> element is used to identify a thematic grouping of content, which generally, but not always, includes a heading. 
+<aside> element holds content, such as sidebars, inserts, or brief explanations, that is tangentially related to the content surrounding it. 
+<footer> element identifies the closing or end of a page, article, section, or other segment of a page. 
+<cite>: Used to reference a creative work, author, or resource
+<q>: Used for short, inline quotations
+<blockquote>: Used for longer external quotations
+<ul> unordered list block-level element
+<li> each item in a list is individually marked up using the list item element
+<ol> The ordered list element 
+	=> <ol start="30"> The start attribute defines the number from which an ordered list should start. 
+	=> <ol reversed> allows a list to appear in reverse order
+<img> tag is used to embed an image in an HTML page. 
+	=> <img src="assets/images/myImg.jpg" alt="Sort description here">
+<audio> used to embed sound content in documents.
+	=> <audio src="jazz.ogg" autoplay controls loop preload="none"></audio>
+	=> When the preload attribute isn’t present on the <audio> element, all information 
+	   about an audio file is loaded, as if the value was set to auto. For this reason, 
+	   using the preload attribute with a value of metadata or none is a good idea when 
+	   an audio file is not essential to a page. It’ll help to conserve bandwidth and 
+	   allow pages to load faster.
+	=> Using a <source> element and src attribute for each file format, we can list one audio file 
+	   format after the other. We’ll use the type attribute to quickly help the browser identify 
+	   which audio types are available. When a browser recognizes an audio file format it will load 
+	   that file and ignore all the others.
+<video> used to embed video content in documents.
+	=> aside of every other proprety existing in the audio tag, u can also add the poster attribute
+	<video src="earth.ogv" controls poster="earth-video-screenshot.jpg"></video>
+<iframe> a way to add content to a page is to embed another HTML page within the current page. 
+<figure> block-level element is used to identify and wrap self-contained content, often in the form 
+	 of media. It may surround images, audio clips, videos, blocks of code, diagrams, illustrations, 
+	 or other self-contained media
+<form> element is used to add a form to a page
+	=> action attribute contains the URL to which information included within 
+	   the form will be sent for processing by the server. 
+	=> method attribute is the HTTP method browsers should use to submit the form data.
+<input> is one of the primary elements used to obtain text from users
+	=> type attribute to define what type of information is to be captured within the control.
+	=> name attribute value is used as the name of the control and is submitted along 
+	   with the input data to the server.
+<textarea> element differs from the <input> element in that it can accept larger passages 
+	of text spanning multiple lines.
+radio button, to create it the <input> element is used with a type attribute value of radio.
+	=> we have to define the input value using the value attribute
+	=> Check boxes are very similar to radio buttons. They use the same attributes and patterns, 
+	   with the exception of checkbox as their type attribute value. The difference between 
+	   the two is that check boxes allow users to select multiple values and tie them all to 
+	   one control name, while radio buttons limit users to one value.
+<select> element wraps all of the menu options, and each menu option is marked up using 
+	the <option> element. The name attribute resides on the <select> element, and the value 
+	attribute resides on the <option> elements that are nested within the <select> element. 
+	The value attribute on each <option> element then corresponds to the name 
+	attribute on the <select> element.
+	=> selected Boolean attribute to preselect an option for users.
+Submit Input : Users click the submit button to process data after filling out a form. 
+	The submit button is created using the <input> element with a type attribute value of submit. 
+	The value attribute is used to specify the text that appears within the button.
+File Input : To allow users to add a file to a form, much like attaching a file to an email, 
+	use the file value for the type attribute.
+<label> Labels provide captions or headings for form controls
+	=> for attribute should be the same as the value of the id attribute on the form control 
+	   the label corresponds to. Matching up the for and id attribute values ties the two 
+	   elements together
+<fieldset> Much like a <section> or other structural element
+<legend> element wraps text describing the form controls that fall within the fieldset.
+Form & Input Attributes
+	=> disabled turns off an element so that it is not available for interaction or input
+	=> placeholder attribute provides a hint or tip within the form control of an 
+	   <input> or <textarea> element that disappears once the control is clicked in or gains focus
+	=> required attribute enforces that an element or form control must contain a value upon 
+	   being submitted to the server (can be styled using the :optional and :required CSS pseudo-classes.)
+<table> element used to initialize a table on a page. 
+<tr> once a table has been defined in HTML, table rows may be added using the <tr>
+<td> once a table is defined and rows within that table have been set up, 
+	data cells may be added to the table via the table data, or <td>, element. 
+<th> table header : scope attribute helps to identify exactly what content a table header relates to
+=> there are a few additional elements to help us organize the data and structure of a table. 
+   These elements include <caption>, <thead>, <tbody>, and <tfoot>.
+<caption> element provides a caption or title for a table
+<thead> wraps the heading row or rows of a table to denote the head
+<tfoot> element contains data that outlines the contents of a table.
+<var> Defines a variable ???
+=> The colspan attribute is used to span a single cell across multiple columns within a table, 
+   while the rowspan attribute is used to span a single cell across multiple rows.
+=> To change text direction and make the text go right-to-left. <bdo dir="rtl"></bdo>
+=> To display full abbreviation text : <abbr title="World Health Organization"> WHO</abbr>
+
+Note !! The <button> element performs the same way as the <input> element with 
+		the type attribute value of submit
+	
+Note !! Each encoded character will begin with an ampersand, &, and end with a semicolon, ;. 
+		What falls between the ampersand and semicolon is a character’s unique encoding, 
+		be it a name or numeric encoding.
+
+Note !! To create an email link, the href attribute value needs to start with mailto:
+		we can include the subject= parameter after the email address
+		first parameter following the email address must begin with a question mark, ?, 
+		to bind it to the hyperlink path. Multiple words within a subject line require 
+		that spaces be encoded using %20.
+		Adding body text works in the same way as adding the subject, this time using the body= parameter 
+		in the href attribute value. Because we are binding one parameter to another we need 
+		to use the ampersand, &, to separate the two. As with the subject, spaces must be 
+		encoded using %20, and line breaks must be encoded using %0A.
+		<a href="mailto:shay@awesome.com?subject=Reaching%20Out&body=How%20are%20you">Email Me</a>
+
+Note !! To trigger the action of opening a link in a new window, use the 
+		target attribute with a value of _blank. 
+
+Note !! We can create an on-page link by first setting an id attribute on the element we wish 
+		to link to, then using the value of that id attribute within an anchor element’s href attribute.
+
+Semantic code : describes the value of content on a page, 
+	regardless of the style or appearance of that content
+<div>s and <span>s actually don’t hold any semantic value. They exist for styling purposes only.
+
+------------------------------CSS------------------------------
+Selectors : selector designates exactly which element or elements within our 
+	HTML to target and apply styles, Selectors generally target an attribute value, 
+	such as an id or class value, or target the type of element
+common selectors: type, class, and ID selectors.
+Properties : There are numerous properties we can use, such as background, 
+	color, font-size, height, and width
+Values : determine the behavior of that property with a value.
+CSS resets : take every common HTML element with a predefined style and provide 
+	one unified style for all browsers (Eric Meyer’s reset)
+
+All styles will cascade from the top of our style sheet to the bottom of our style sheet. 
+There are, however, times where the cascade doesn’t play so nicely. 
+Those times occur when different types of selectors are used and the specificity of those 
+selectors breaks the cascade
+
+Specificity Points : 
+	The type selector has the lowest specificity weight and holds a point value of 0-0-1. 
+	The class selector has a medium specificity weight and holds a point value of 0-1-0. 
+	Lastly, the ID selector has a high specificity weight and holds a point value of 1-0-0. 
+Using multiple classes, we can layer on as many styles as we wish, keeping our code lean and our specificity weights low
+selector1 > selector2 : means this applies to every selector2 which is an immediate child of selector1
+selector1 + selector2 : applies to the first selector2 element that is directly after a selector1 element
+selector1 ~ selector2 : applies to selector2 elements that are siblings of a selector1 element
+a[target] Set the background color to "red" for <a> elements that have a target attribute.
+
+
+Spaces Within Selectors : .class1 .class2 => this applies to all class2 elements inside of a class1
+ => Specificity Within Combined Selectors usually applies in spaces with a simple + operation
+Commas between Selectors : The comma at the end of the first selector signifies that another selector is to follow
+last-child and first-child gives u access to different sub-elements
+
+Lenghts :
+	* The "em" unit, its length is calculated based on an element’s font size
+	  a single em unit is equivalent to an element’s font size
+	* The "%" unit, Percentage lengths are defined in relation to the length of 
+	  another object ( parent object )
+	* The "rem" unit, Represents the font-size of the root element (typically <html>).
+	* The vh unit, Equal to 1% of the height of the viewport's initial containing block.
+	* The vw unit, Equal to 1% of the width of the viewport's initial containing block.
+
+Each part of the box model corresponds to a CSS property: width, height, padding, border, and margin.
+total width = margin-right + border-right + padding-right + width + padding-left + border-left + margin-left
+total height = margin-top + border-top + padding-top + height + padding-bottom + border-bottom + margin-bottom
+
+Note !! Please keep in mind that inline-level elements will not accept the width and height 
+	properties or any values tied to them. Block and inline-block elements will, however, 
+	accept the width and height properties and their corresponding values.
+	One oddity with the margin property is that vertical margins, top and bottom, 
+	are not accepted by inline-level elements. These vertical margins are, however, 
+	accepted by block-level and inline-block elements.
+	The padding property, unlike the margin property, works vertically on inline-level elements. 
+	This vertical padding may blend into the line above or below the given element, but it will be displayed.
+
+"vendor prefixes": 
+	-moz- = used for Mozilla Firefox 
+	-ms- = used for Microsoft Internet Explorer 
+	-o- = used for Opera 
+	-webkit- = used for Google Chrome and Apple Safari browsers.
+Box Sizing
+	* Content Box : The content-box value is the default value, 
+	  leaving the box model as an additive design.
+	* Padding Box : As any padding values increase, the content size 
+	  within an element shrinks proportionately. ( has been deprecated and should not be used. )
+	* border-box value alters the box model so that any 
+	  border or padding property values are included within 
+	  the width and height of an element ( but not the margin ! )
+
+Note !! we can use the universal selector, *, along with universal 
+	pseudo-elements, *:before and *:after, to select every imaginable element
+
+Note !! Using a left and right margin of auto in conjunction with this width 
+	lets the browser automatically figure out equal left and right margins 
+	for the element, thus centering it on the page
+
+Note !! The :before and :after pseudo-elements also mentioned in this step are elements that 
+	can be dynamically generated with CSS.
+
+# --- Positioning :
+
+* The "float" property accepts a few values; the two most popular values are left and right, 
+  which allow elements to be floated to the left or right of their parent element.
+	
+	=> When we float an element, we take it out of the normal flow of the HTML document. 
+	This causes the width of that element to default to the width of the content within it. 
+	Sometimes, such as when we’re creating columns for a reusable layout, this behavior 
+	is not desired. It can be corrected by adding a fixed width property value to each column. 
+	Additionally, to prevent floated elements from touching one another, causing the content 
+	of one to sit directly next to the content of the other, we can use the margin property to 
+	create space between elements.
+	
+	=> The float property relies on an element having a display value of block, and may alter 
+	an element’s default display value if it is not already displayed as a block-level element.
+
+	=> Clearing Floats : To prevent content from wrapping around floated elements
+	Clearing floats is accomplished using the clear property, which accepts a few different 
+	values: the most commonly used values being left, right, and both.
+
+* Recall that the inline-block value for the display property will display elements within a line 
+  while allowing them to accept all box model properties, including height, width, padding, border, 
+  and margin
+	=> make sure to Remove Spaces Between Inline-Block Elements !! ( use HTML solutions )
+
+#---- Position : By default every element has a position value of static, 
+	which means that it exists in the normal flow of a document and 
+	it doesn’t accept any box offset properties
+
+	=> Relative : relatively positioned elements, it’s important to know that the box 
+	   offset properties identify where an element will be moved from given its original position
+	   it appears within the normal flow of a document !
+		* When we position the element using the box offset properties, 
+		the element overlaps the element below it rather than moving that 
+		element down as the margin or padding properties would.
+
+	=> Absolute : absolute value for the position property is different from the relative value 
+	   in that an element with a position value of absolute will not appear within the normal 
+	   flow of a document, and the original space and position of the absolutely positioned 
+	   element will not be preserved.
+		* Additionally, absolutely positioned elements are moved in relation to their 
+		  "closest relatively positioned parent element". 
+		   if a relatively positioned parent element not exist, the absolutely positioned 
+		   element will be positioned in relation to the <body> element
+
+	Note !! With relatively positioned elements, the box offset properties identify in which 
+		direction an element would be moved in relation to itself. With absolutely positioned 
+		elements, the box offset properties identify in which direction an element will be moved in relation to its closest relatively positioned parent element
+
+#---- Typography
+
+typeface : is what we see. It is the artistic impression of how text looks, feels, and reads.
+font : is a file that contains a typeface. Using a font on a computer allows the computer to 
+	access the typeface.
+
+common propreties : color, font-family, font-weight, font-variant, line-heigh, text-align,
+	text-decoration, text-indent, box-shadow, text-transform, letter-spacing, word-spacing,
+	background, background-color, background-image(with url("")), background-repeat, 
+	background-position, background-size, background-clip, background-origin,
+	list-style-type, list-style-position, background-attachment
+
+"background-attachment : fixed" makes the image fixed in its position (doesnt scroll)
+
+The best practice for legibility is to set the line-height to around one and 
+a half times our font-size property value.
+
+* Line height may also be used to vertically center a single line of text within an element. 
+  Using the same property value for the line-height and height properties will vertically center the text:
+* the box-shadow property may include an optional inset value at the beginning of the value 
+  to place the shadow inside an element as opposed to outside the element.
+* use CSS @font-face at-rule to embbed ur own fonts
+* when dealing with gradients use background or background-image not background-color 
+  and make sure to use the following background: linear-gradient(50deg, #648880, #293f50); 
+  or radial-gradient(#648880, #293f50); we can also use "Gradient Color Stops"
+
+=> :nth-child pseudo-class selector with an even or odd argument to select every other <tr> element.
+=> To align text vertically, however, the vertical-align property is used. 
+   The vertical-align property works only with inline and table-cell elements—it won’t work for block, 
+   inline-block, or any other element levels.
+=> :first-of-type pseudo-class selector will select the first element of its type within a parent element
+=> :only-of-type pseudo-class selector will select an element if it’s the only element of 
+   its type within a parent element.
+
+  
+text-overflow:ellipsis; Specify that the overflowed content should be signaled with an ellipsis (...).
+word-wrap:break-word; Specify that text should wrap, even if it needs to split in the middle of a word.
+
+read more about @keyframes and animations in CSS
+
+	transition: width 2s;
+	transition-timing-function: ease-in-out;
+	transition-delay: 0.5s;
+	
+	animation-name: example;   
+	animation-duration: 2s;
+ 	animation-delay: 1s; ("1" second delay before starting.)
+	animation-iteration-count: infinite; (continue to loop for ever.)
+	animation-direction: alternate; (alternate between running forwards and backwards.)
+	animation-timing-function: ease-in-out; ("ease-in-out" speed curve animation)
+
+	//defining an animation keyframes
+	@keyframes example {
+ 		from {background-color: red;}
+ 		to {background-color: blue;}
+	}
+
+
+/-----------------------------JavaScript-------------------------------
+anonymous function is simply a function without a name. Anonymous functions can either be used 
+	as a parameter for another function, or it can be turned into a function expression.
+	=>  el.addEventListener("click", function() { alert("Alert!"); } );
+	* When we turn it into a function expression, we assign the anonymous function to a variable. 
+	  The variable name will then act as the function’s name.
+	* Like anonymous functions, arrow functions can be turned into function expressions.
+
+Note !! Inline (HTML element embedded) event handlers is considered a bad practice!
+	=> onclick property contains the event handler code we need to listen for 
+	   a click event on the element.
+	=> addEventListener() function invoked on the element object it takes two arguments. 
+	   the first argument specifies the type of event we’re listening for and in the second 
+	   argument we specify the function to invoke when the event fires.
+
+
+Arrays : Array.length - Tells how many elements there are in an array
+	 Array.push() - To add elements to an array
+	 Array.pop() - Removes an element from the end of the array.
+	 Array.shift() - Removes an element from the start of the array.
+	 Array.splice() - Removes an element at a specific index.
+		=> the function needs two arguments. The first argument specifies the index at which 
+		   to begin removing elements. The second argument specifies the number of elements 
+		   to remove.
+	 Array.concat()	Merge two or more arrays and return the new array.
+	 Array.filter()	Return an array with the elements that satisfy specific function conditions.
+	 Array.forEach() Calls a function for each element in the array.
+	 Array.includes() Checks if an array contains a specific element.
+	 Array.map() Calls a function for every array element and return the new array.
+	 Array.sort() Return elements of an array in a specific sorted order.
+	 Array.every() Determine whether all elements in an array satisfy specific function conditions.
+	 Array.reduce() executes a user-supplied “reducer” callback function on each element of the array, 
+		in order, passing in the return value from the calculation on the preceding element. 
+		The final result of running the reducer across all elements of the array is a single value.
+
+Accessor and Mutator methodes : get and set
+
+Date() :
+	d.getFullYear() => returns the current year in 4 digits
+	d.getMonth() => gets the month (0-11) out of a date object.
+	d.setFullYear(2020) 
+	
+* The textContent propre will return all text, including anything inside a hidden element
+* The innerText proprety will return all text, excluding anything inside a hidden element
+* The innerHTML proprety will return both text and any other HTML content inside the element
+
+=> JS and html attributes :
+	* getAttribute
+	* setAttribute
+	* hasAttribute
+
+* addEventListener : we can set capturing to true
+	- capturing will handle the outer (parent) elements event first, then the inner(child) elements
+	- bubbling will handle the inner elements first
+
+JS async :
+	- async : makes a function return a Promise
+	- await : makes a function wait for a Promise
+
+	PS : the keyword async before a function makes the function return a Promise
+		 the await keyword can only be used inside an async function
