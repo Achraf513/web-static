@@ -1,0 +1,293 @@
+[
+    {
+        "title": "Element",
+        "description": "just the name of the tag it self."
+    },
+    {
+        "title": "Tag",
+        "description": "the element surrounded with &lt;&gt; and usually the closing pair as well."
+    },
+    {
+        "title": "&lt;!DOCTYPE html&gt;",
+        "description": "informs web browsers which version of HTML is being used"
+    },
+    {
+        "def": {
+            "title": "Attributes",
+            "description": "Attributes are properties used to provide additional information about an element."
+        },
+        "subdefs": [
+            "id : identifies an element",
+            "class : classifies an element",
+            "src : specifies a source for embeddable content",
+            "href : provides a hyperlink reference to a linked resource.",
+            "rel : The rel attribute specifies the relationship between the current document and the linked document (only used if the href attribute is present)"
+        ]
+    },
+    {
+        "title": "Self-Closing Elements",
+        "description": "&lt;img&gt; &lt;br&gt; &lt;meta&gt; &lt;input&gt; &lt;source&gt; &lt;hr&gt; &lt;wbr&gt; &lt;embed&gt; &lt;link&gt;"
+    },
+    {
+        "title": "&lt;html&gt;",
+        "description": "signifies the beginning and end of the document."
+    },
+    {
+        "title": "&lt;head&gt;",
+        "description": "identifies the top of the document including any metadata."
+    },
+    {
+        "title": "&lt;meta charset=\"utf-8\"&gt;",
+        "description": "defines the character encoding of the page"
+    },
+    {
+        "title": "&lt;title&gt;",
+        "description": "defines the title of the document"
+    },
+    {
+        "title": "&lt;body&gt;",
+        "description": "All of the visible content within the web page will fall within it"
+    },
+    {
+        "title": "&lt;h1&gt;",
+        "description": "includes a heading "
+    },
+    {
+        "title": "&lt;p&gt;",
+        "description": "includes a paragraph"
+    },
+    {
+        "title": "&lt;span&gt;",
+        "description": "inline-level element"
+    },
+    {
+        "title": "&lt;strong&gt; and &lt;b&gt;",
+        "description": "To make text bold and place a strong importance on it (inline-level element) "
+    },
+    {
+        "title": "&lt;em&gt; and &lt;i&gt;",
+        "description": "To italicize text (inline-level element)"
+    },
+    {
+        "title": "&lt;header&gt;",
+        "description": "used to identify the top of a page"
+    },
+    {
+        "title": "&lt;nav&gt;",
+        "description": "element identifies a section of major navigational links on a page."
+    },
+    {
+        "title": "&lt;a&gt;",
+        "description": "Miscellaneous one-off links should not be wrapped within "
+    },
+    {
+        "title": "&lt;nav&gt;",
+        "description": "they should use the anchor element (inline element)"
+    },
+    {
+        "title": "&lt;article&gt;",
+        "description": "used to identify a section of independent, self-contained content that may be independently distributed or reused"
+    },
+    {
+        "title": "&lt;section&gt;",
+        "description": "used to identify a thematic grouping of content, which generally, but not always, includes a heading. "
+    },
+    {
+        "title": "&lt;aside&gt;",
+        "description": "holds content, such as sidebars, inserts, or brief explanations, that is tangentially related to the content surrounding it. "
+    },
+    {
+        "title": "&lt;footer&gt;",
+        "description": "identifies the closing or end of a page, article, section, or other segment of a page. "
+    },
+    {
+        "title": "&lt;cite&gt;",
+        "description": "Used to reference a creative work, author, or resource"
+    },
+    {
+        "title": "&lt;q&gt;",
+        "description": "Used for short, inline quotations"
+    },
+    {
+        "title": "&lt;blockquote&gt;",
+        "description": "Used for longer external quotations"
+    },
+    {
+        "title": "&lt;ul&gt;",
+        "description": "unordered list block-level element"
+    },
+    {
+        "title": "&lt;li&gt;",
+        "description": "each item in a list is individually marked up using the list item element"
+    },
+    {
+        "def": {
+            "title": "&lt;ol&gt;",
+            "description": "The ordered list element"
+        },
+        "subdefs": [
+            "&lt;ol start=\"30\"&gt; The start attribute defines the number from which an ordered list should start. ",
+            "&lt;ol reversed&gt; allows a list to appear in reverse order"
+        ]
+    },
+    {
+        "def": {
+            "title": "&lt;img&gt;",
+            "description": "tag is used to embed an image in an HTML page. "
+        },
+        "subdefs": [
+            "&lt;img src=\"assets/images/myImg.jpg\" alt=\"Short description here\"&gt;"
+        ]
+    },
+    {
+        "def": {
+            "title": "&lt;audio&gt;",
+            "description": "used to embed sound content in documents."
+        },
+        "subdefs": [
+            "&lt;audio src=\"jazz.ogg\" autoplay controls loop preload=\"none\"&gt;&lt;/audio&gt;",
+            "When the preload attribute isn’t present on the &lt;audio&gt; element, all information about an audio file is loaded, as if the value was set to auto. For this reason, using the preload attribute with a value of metadata or none is a good idea when an audio file is not essential to a page. It’ll help to conserve bandwidth and allow pages to load faster.",
+            "Using a &lt;source&gt; element and src attribute for each file format, we can list one audio file format after the other. We’ll use the type attribute to quickly help the browser identify which audio types are available. When a browser recognizes an audio file format it will load that file and ignore all the others (fallback strategy)."
+        ]
+    },
+    {
+        "def": {
+            "title": "&lt;video&gt;",
+            "description": "used to embed video content in documents."
+        },
+        "subdefs": [
+            "aside of every other proprety existing in the audio tag, u can also add the poster attribute",
+            "&lt;video src=\"earth.ogv\" controls poster=\"earth-video-screenshot.jpg\"&gt;&lt;/video&gt;"
+        ]
+    },
+    {
+        "title": "&lt;iframe&gt;",
+        "description": "a way to add content to a page is to embed another HTML page within the current page. "
+    },
+    {
+        "title": "&lt;figure&gt;",
+        "description": "block-level element is used to identify and wrap self-contained content, often in the form of media. It may surround images, audio clips, videos, blocks of code, diagrams, illustrations, or other self-contained media"
+    },
+    {
+        "def": {
+            "title": "&lt;form&gt;",
+            "description": "element is used to add a form to a page"
+        },
+        "subdefs": [
+            "action attribute contains the URL to which information included within the form will be sent for processing by the server.",
+            "method attribute is the HTTP method browsers should use to submit the form data."
+        ]
+    },
+    {
+        "def": {
+            "title": "&lt;input&gt;",
+            "description": "is one of the primary elements used to obtain text from users"
+        },
+        "subdefs": [
+            "type attribute to define what type of information is to be captured within the control.",
+            "name attribute value is used as the name of the control and is submitted along with the input data to the server."
+        ]
+    },
+    {
+        "title": "&lt;textarea&gt;",
+        "description": "element differs from the &lt;input&gt; element in that it can accept larger passages of text spanning multiple lines."
+    },
+    {
+        "def": {
+            "title": "Radio button",
+            "description": "to create a Radio button use the &lt;input&gt; element is used with a type attribute value of radio."
+        },
+        "subdefs": [
+            "we have to define the input value using the value attribute",
+            "Check boxes are very similar to radio buttons. They use the same attributes and patterns, with the exception of checkbox as their type attribute value. The difference between the two is that check boxes allow users to select multiple values and tie them all to one control name, while radio buttons limit users to one value."
+        ]
+    },
+    {
+        "def": {
+            "title": "&lt;select&gt;",
+            "description": "element wraps all of the menu options, and each menu option is marked up using the &lt;option&gt; element. The name attribute resides on the &lt;select&gt; element, and the value attribute resides on the &lt;option&gt; elements that are nested within the &lt;select&gt; element. The value attribute on each &lt;option&gt; element then corresponds to the name attribute on the &lt;select&gt; element."
+        },
+        "subdefs": [
+            "selected Boolean attribute to preselect an option for users."
+        ]
+    },
+    {
+        "def": {
+            "title": "Submit Input",
+            "description": "Users click the submit button to process data after filling out a form. "
+        },
+        "subdefs": [
+            "The submit button is created using the &lt;input&gt; element with a type attribute value of submit.",
+            "The value attribute is used to specify the text that appears within the button."
+        ]
+    },
+    {
+        "title": "File Input",
+        "description": "To allow users to add a file to a form, much like attaching a file to an email, use the file value for the type attribute."
+    },
+    {
+        "def": {
+            "title": "&lt;label&gt;",
+            "description": "Labels provide captions or headings for form controls"
+        },
+        "subdefs": [
+            "for attribute should be the same as the value of the id attribute on the form control the label corresponds to. Matching up the for and id attribute values ties the two elements together"
+        ]
+    },
+    {
+        "title": "&lt;fieldset&gt;",
+        "description": "Much like a &lt;section&gt; or other structural element"
+    },
+    {
+        "title": "&lt;legend&gt;",
+        "description": "element wraps text describing the form controls that fall within the fieldset."
+    },
+    {
+        "def": {
+            "title": "Form & Input Attributes",
+            "description": ""
+        },
+        "subdefs": [
+            "disabled turns off an element so that it is not available for interaction or input",
+            "placeholder attribute provides a hint or tip within the form control of an &lt;input&gt; or &lt;textarea&gt; element that disappears once the control is clicked in or gains focus",
+            "required attribute enforces that an element or form control must contain a value upon being submitted to the server (can be styled using the :optional and :required CSS pseudo-classes.) "
+        ]
+    },
+    {
+        "title": "&lt;table&gt;",
+        "description": "element used to initialize a table on a page."
+    },
+    {
+        "title": "&lt;tr&gt;",
+        "description": "once a table has been defined in HTML, table rows may be added using the &lt;tr&gt;"
+    },
+    {
+        "title": "&lt;td&gt;",
+        "description": " once a table is defined and rows within that table have been set up, data cells may be added to the table via the table data, or &lt;td&gt;, element. "
+    },
+    {
+        "title": "&lt;th&gt;",
+        "description": "table header scope attribute helps to identify exactly what content a table header relates to"
+    },
+    {
+        "def": {
+            "title": "More about tables",
+            "description": "there are a few additional elements to help us organize the data and structure of a table. These elements include &lt;caption&gt;, &lt;thead&gt;, &lt;tbody&gt;, and &lt;tfoot&gt;."
+        },
+        "subdefs": [
+            "&lt;caption&gt; element provides a caption or title for a table.",
+            "&lt;thead&gt; wraps the heading row or rows of a table to denote the head.",
+            "&lt;tfoot&gt; element contains data that outlines the contents of a table.",
+            "The colspan attribute is used to span a single cell across multiple columns within a table, while the rowspan attribute is used to span a single cell across multiple rows."
+        ]
+    },
+    {
+        "def": {
+            "title": "Semantic code ",
+            "description": "describes the value of content on a page, regardless of the style or appearance of that content"
+        },
+        "subdefs": [
+            "&lt;div&gt;s and &lt;span&gt;s actually don’t hold any semantic value. They exist for styling purposes only."
+        ]
+    }
+]

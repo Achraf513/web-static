@@ -19,32 +19,32 @@
 <!DOCTYPE html> informs web browsers which version of HTML is being used
 <html> signifies the beginning and end of the document.
 <head> identifies the top of the document including any metadata.
-<body> All of the visible content within the web page will fall within it
 <meta charset="utf-8"> the character encoding of the page
 <title> the title of the document
+<body> All of the visible content within the web page will fall within it
 <h1> includes a heading 
 <p> includes a paragraph
 <span> inline-level element
 <strong> and <b> To make text bold and place a strong importance on it (inline-level element) 
-<em> and <i> To italicize text, thereby placing emphasis on it (inline-level element)
-<header> element, like it sounds, is used to identify the top of a page
+<em> and <i> To italicize text (inline-level element)
+<header> used to identify the top of a page
 <nav> element identifies a section of major navigational links on a page.
 <a> Miscellaneous one-off links should not be wrapped within 
 	the <nav> element they should use the anchor element (inline element)
-<article> element is used to identify a section of independent, self-contained content that may be independently distributed or reused
-<section> element is used to identify a thematic grouping of content, which generally, but not always, includes a heading. 
-<aside> element holds content, such as sidebars, inserts, or brief explanations, that is tangentially related to the content surrounding it. 
-<footer> element identifies the closing or end of a page, article, section, or other segment of a page. 
-<cite>: Used to reference a creative work, author, or resource
-<q>: Used for short, inline quotations
-<blockquote>: Used for longer external quotations
+<article> used to identify a section of independent, self-contained content that may be independently distributed or reused
+<section> used to identify a thematic grouping of content, which generally, but not always, includes a heading. 
+<aside> holds content, such as sidebars, inserts, or brief explanations, that is tangentially related to the content surrounding it. 
+<footer> identifies the closing or end of a page, article, section, or other segment of a page. 
+<cite> Used to reference a creative work, author, or resource
+<q> Used for short, inline quotations
+<blockquote> Used for longer external quotations
 <ul> unordered list block-level element
 <li> each item in a list is individually marked up using the list item element
 <ol> The ordered list element 
 	=> <ol start="30"> The start attribute defines the number from which an ordered list should start. 
 	=> <ol reversed> allows a list to appear in reverse order
 <img> tag is used to embed an image in an HTML page. 
-	=> <img src="assets/images/myImg.jpg" alt="Sort description here">
+	=> <img src="assets/images/myImg.jpg" alt="Short description here">
 <audio> used to embed sound content in documents.
 	=> <audio src="jazz.ogg" autoplay controls loop preload="none"></audio>
 	=> When the preload attribute isn’t present on the <audio> element, all information 
@@ -55,7 +55,7 @@
 	=> Using a <source> element and src attribute for each file format, we can list one audio file 
 	   format after the other. We’ll use the type attribute to quickly help the browser identify 
 	   which audio types are available. When a browser recognizes an audio file format it will load 
-	   that file and ignore all the others.
+	   that file and ignore all the others (fallback strategy).
 <video> used to embed video content in documents.
 	=> aside of every other proprety existing in the audio tag, u can also add the poster attribute
 	<video src="earth.ogv" controls poster="earth-video-screenshot.jpg"></video>

@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Notes</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,600;1,300&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="./stylesheets/main.css" />
+</head>
+
+<body>
+    <header class="group page-header fixed">
+        <h1 class="logo">
+            <a class="lightText" href="index.html">WEBSTATIC NOTES</a>
+        </h1>
+        <nav class="navbar">
+            <ul>
+                <li><a class="lightText" href="https://learn.shayhowe.com/advanced-html-css/performance-organization/" target="_blanc">HTML & CSS</a></li><!--
+                --><li><a class="lightText" href="https://www.koderhq.com/tutorial/javascript/" target="_blanc">JavaScript</a></li>
+            </ul>
+        </nav>
+    </header>
+    <section class="content-body">
+        <aside class="col-1-5 content-menu">
+            <div class="content-menu-empty"></div>
+            <section class="content-menu-data">
+                <ol class="outer-ol">
+                    <li><a>HTML</a> 
+                        <ol id="HTML-ol" class="inner-ol">
+                        </ol>
+                    </li>
+                    <hr>
+                    <li><a>CSS</a> 
+                        <ol id="CSS-ol" class="inner-ol">
+                        </ol>
+                    </li>
+                    <hr>
+                    <li><a>JavaScript</a> 
+                        <ol id="JS-ol" class="inner-ol">
+                        </ol>
+                    </li>
+                </ol>
+            </section>
+        </aside><!--
+        --><section id="mainContent" class="col-4-5">
+            <section class="about-us p-15">
+                <h1 class="section-title">
+                    About this website
+                </h1>
+                <p class="section-description">
+                    This website provides several important notes related to HTML, CSS and JavaScript, 
+                    gathered from different websites <br> Please note ! this is not a full course but simply important notes that may come in handy while working with these technologies.
+                </p>
+            </section>
+            <div class="custom-shape-divider-top-1643876252">
+                <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
+                    <path d="M1200 0L0 0 892.25 114.72 1200 0z" class="shape-fill"></path>
+                </svg>
+            </div>
+            <section id="html-section" class="cours-section p-15">
+                <h1 class="section-title">
+                    HTML notes
+                </h1>
+                <section class="section-description">
+                    <div id="httpDefinitions">
+                    </div>
+                </section>
+            </section>
+            <section id="css-section" class="cours-section p-15">
+                <h1 class="section-title">
+                    CSS notes
+                </h1>
+                <section class="section-description">
+                    <div id="cssDefinitions">
+                    </div>
+                </section>
+            </section>
+            <section id="css-section" class="cours-section p-15">
+                <h1 class="section-title">
+                    JavaScript notes
+                </h1>
+                <section class="section-description">
+                    <div id="jsDefinitions">
+                    </div>
+                    <table>
+                        <tr>
+                            <th>methode</th>
+                            <th>description</th>
+                        </tr>
+                        <tr>
+                            <td>Array.length</td>
+                            <td>Tells how many elements there are in an array</td>
+                        </tr>
+                        <tr>
+                            <td>Array.push() </td>
+                            <td>To add elements to an array</td>
+                        </tr>
+                        <tr>
+                            <td>Array.pop()</td>
+                            <td>Removes an element from the end of the array.</td>
+                        </tr>
+                        <tr>
+                            <td>Array.shift()</td>
+                            <td>Removes an element from the start of the array.</td>
+                        </tr>
+                        <tr>
+                            <td>Array.splice()</td>
+                            <td>Removes an element at a specific index.</td>
+                        </tr>
+                        <tr>
+                            <td>Array.concat()</td>
+                            <td>Merge two or more arrays and return the new array.</td>
+                        </tr>
+                        <tr>
+                            <td>Array.filter()</td>
+                            <td>Return an array with the elements that satisfy specific function conditions.</td>
+                        </tr>
+                        <tr>
+                            <td>Array.forEach()</td>
+                            <td>Calls a function for each element in the array.</td>
+                        </tr>
+                        <tr>
+                            <td>Array.includes()</td>
+                            <td>Checks if an array contains a specific element.</td>
+                        </tr>
+                        <tr>
+                            <td>Array.map()</td>
+                            <td>Calls a function for every array element and return the new array.</td>
+                        </tr>
+                        <tr>
+                            <td>Array.sort()</td>
+                            <td>Return elements of an array in a specific sorted order.</td>
+                        </tr>
+                        <tr>
+                            <td>Array.every()</td>
+                            <td>Determine whether all elements in an array satisfy specific function conditions.</td>
+                        </tr>
+                        <tr>
+                            <td>Array.reduce()</td>
+                            <td>executes a user-supplied “reducer” callback function on each element of the array,in order, passing in the return value from the calculation on the preceding element.The final result of running the reducer across all elements of the array is a single value.</td>
+                        </tr>
+                    </table>
+                </section>
+            </section>
+        </section>
+    </section>
+    <footer>
+
+    </footer>
+    <script src="main.js"></script>
+</body>
+
+</html>

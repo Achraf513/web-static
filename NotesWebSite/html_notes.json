@@ -1,0 +1,9 @@
+[
+    "To change text direction and make the text go right-to-left. &lt;bdo dir=\"rtl\"&gt;&lt;/bdo&gt;",
+    "To display full abbreviation text : &lt;abbr title=\"World Health Organization\"&gt; WHO&lt;/abbr&gt;",
+    "The &lt;button&gt; element performs the same way as the &lt;input&gt; element with the type attribute value of submit",
+    "Each encoded character will begin with an ampersand, &, and end with a semicolon, ; What falls between the ampersand and semicolon is a character’s unique encoding, be it a name or numeric encoding.",
+    "To create an email link, the href attribute value needs to start with mailto: we can include the subject= parameter after the email addressfirst parameter following the email address must begin with a question mark, ?, to bind it to the hyperlink path. Multiple words within a subject line require that spaces be encoded using %20.Adding body text works in the same way as adding the subject, this time using the body= parameter in the href attribute value. Because we are binding one parameter to another we need to use the ampersand, &, to separate the two. As with the subject, spaces must be encoded using %20, and line breaks must be encoded using %0A. &lt;a href=\"mailto:shay@awesome.com?subject=Reaching%20Out&body=How%20are%20you\"&gt;Email Me&lt;/a&gt;",
+    "To trigger the action of opening a link in a new window, use the target attribute with a value of _blank.",
+    " We can create an on-page link by first setting an id attribute on the element we wish to link to, then using the value of that id attribute within an anchor element’s href attribute."
+]

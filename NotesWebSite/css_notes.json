@@ -1,0 +1,16 @@
+[
+    "All styles will cascade from the top of our style sheet to the bottom of our style sheet. There are, however, times where the cascade doesn’t play so nicely. Those times occur when different types of selectors are used and the specificity of those selectors breaks the cascade",
+    "Please keep in mind that inline-level elements will not accept the width and height properties or any values tied to them. Block and inline-block elements will, however, accept the width and height properties and their corresponding values. One oddity with the margin property is that vertical margins, top and bottom, are not accepted by inline-level elements. These vertical margins are, however, accepted by block-level and inline-block elements. The padding property, unlike the margin property, works vertically on inline-level elements. This vertical padding may blend into the line above or below the given element, but it will be displayed.",
+    "we can use the universal selector, *, along with universal pseudo-elements, *:before and *:after, to select every imaginable element",
+    "Using a left and right margin of auto in conjunction with this width lets the browser automatically figure out equal left and right margins for the element, thus centering it on the page",
+    "The :before and :after pseudo-elements also mentioned in this step are elements that can be dynamically generated with CSS.",
+    "Recall that the inline-block value for the display property will display elements within a line while allowing them to accept all box model properties, including height, width, padding, border, and margin (make sure to Remove Spaces Between Inline-Block Elements !! ( use HTML solutions ))",
+    "With relatively positioned elements, the box offset properties identify in which direction an element would be moved in relation to itself. With absolutely positioned elements, the box offset properties identify in which direction an element will be moved in relation to its closest relatively positioned parent element",
+    "{background-attachment : fixed} makes the image fixed in its position (doesnt scroll)",
+    "the box-shadow property may include an optional inset value at the beginning of the valueto place the shadow inside an element as opposed to outside the element.",
+    "use CSS @font-face at-rule to embbed ur own fonts",
+    "when dealing with gradients use background or background-image not background-color and make sure to use the following background: linear-gradient(50deg, #648880, #293f50); or radial-gradient(#648880, #293f50); we can also use \"Gradient Color Stops\"",
+    "To align text vertically, however, the vertical-align property is used. The vertical-align property works only with inline and table-cell elements—it won’t work for block, inline-block, or any other element levels.",
+    "text-overflow:ellipsis; Specify that the overflowed content should be signaled with an ellipsis (...).",
+    "word-wrap:break-word; Specify that text should wrap, even if it needs to split in the middle of a word."
+]

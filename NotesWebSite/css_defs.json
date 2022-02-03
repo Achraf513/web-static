@@ -1,0 +1,182 @@
+[
+    {
+        "title": "Selectors",
+        "description": "selector designates exactly which element or elements within our HTML to target and apply styles, Selectors generally target an attribute value, such as an id or class value, or target the type of element common selectors: type, class, and ID selectors."
+    },
+    {
+        "title": "Properties",
+        "description": "There are numerous properties we can use, such as background, color, font-size, height, and width"
+    },
+    {
+        "title": "Values",
+        "description": "determine the behavior of that property with a value."
+    },
+    {
+        "title": "CSS resets",
+        "description": "take every common HTML element with a predefined style and provide one unified style for all browsers (Eric Meyer’s reset)"
+    },
+    {
+        "def": {
+            "title": "Specificity Points",
+            "description": ""
+        },
+        "subdefs": [
+            "The type selector has the lowest specificity weight and holds a point value of 0-0-1.",
+            "The class selector has a medium specificity weight and holds a point value of 0-1-0. ",
+            "Lastly, the ID selector has a high specificity weight and holds a point value of 1-0-0. ",
+            "Using multiple classes, we can layer on as many styles as we wish, keeping our code lean and our specificity weights low",
+            "Specificity Within Combined Selectors usually applies in spaces with a simple + operation"
+        ]
+    },
+    {
+        "def": {
+            "title": "Lenghts",
+            "description": ""
+        },
+        "subdefs": [
+            "The \"em\" unit, its length is calculated based on an element’s font size a single em unit is equivalent to an element’s font size",
+            "The \"%\" unit, Percentage lengths are defined in relation to the length of another object ( parent object )",
+            "The \"rem\" unit, Represents the font-size of the root element (typically &lt;html&gt;).",
+            "The \"vh\" unit, Equal to 1% of the height of the viewport's initial containing block.",
+            "The \"vw\" unit, Equal to 1% of the width of the viewport's initial containing block."
+        ]
+    },
+    {
+        "def": {
+            "title": "Box model",
+            "description": ""
+        },
+        "subdefs": [
+            "Each part of the box model corresponds to a CSS property: width, height, padding, border, and margin.",
+            "total width = margin-right + border-right + padding-right + width + padding-left + border-left + margin-left",
+            "total height = margin-top + border-top + padding-top + height + padding-bottom + border-bottom + margin-bottom"
+        ]
+    },
+    {
+        "def": {
+            "title": "vendor prefixes",
+            "description": ""
+        },
+        "subdefs": [
+            "-moz- = used for Mozilla Firefox ",
+            "-ms- = used for Microsoft Internet Explorer",
+            "-o- = used for Opera",
+            "-webkit- = used for Google Chrome and Apple Safari browsers."
+        ]
+    },
+    {
+        "def": {
+            "title": "Box Sizing",
+            "description": ""
+        },
+        "subdefs": [
+            "Content Box : The content-box value is the default value, leaving the box model as an additive design.",
+            "Padding Box : As any padding values increase, the content size within an element shrinks proportionately. ( has been deprecated and should not be used. ) border or padding property values are included within the width and height of an element ( but not the margin ! )"
+        ]
+    },
+    {
+        "def": {
+            "title": "Combined Selectors",
+            "description": ""
+        },
+        "subdefs": [
+            "selector1 &gt; selector2 : means this applies to every selector2 which is an immediate child of selector1",
+            "selector1 + selector2 : applies to the first selector2 element that is directly after a selector1 element",
+            "selector1 ~ selector2 : applies to selector2 elements that are siblings of a selector1 element",
+            "a[target] Set the background color to x for &lt;a&gt; elements that have a target attribute.",
+            "Spaces Within Selectors : .class1 .class2 =&gt; this applies to all class2 elements inside of a class1",
+            "Commas between Selectors : The comma at the end of the first selector signifies that another selector is to follow",
+            "last-child and first-child gives u access to different sub-elements",
+            ":nth-child pseudo-class selector with an even or odd argument to select every other &lt;tr&gt; element.",
+            ":first-of-type pseudo-class selector will select the first element of its type within a parent element",
+            ":only-of-type pseudo-class selector will select an element if it’s the only element of its type within a parent element."
+        ]
+    },
+    {
+        "def": {
+            "title": "Float",
+            "description": "The float property accepts a few values; the two most popular values are left and right, which allow elements to be floated to the left or right of their parent element."
+        },
+        "subdefs": [
+            "When we float an element, we take it out of the normal flow of the HTML document. This causes the width of that element to default to the width of the content within it. Sometimes, such as when we’re creating columns for a reusable layout, this behavior is not desired. It can be corrected by adding a fixed width property value to each column. Additionally, to prevent floated elements from touching one another, causing the content of one to sit directly next to the content of the other, we can use the margin property to create space between elements.",
+            "The float property relies on an element having a display value of block, and may alter an element’s default display value if it is not already displayed as a block-level element."
+        ]
+    },
+    {
+        "title": "Clearing Floats",
+        "description": "To prevent content from wrapping around floated elements Clearing floats is accomplished using the clear property, which accepts a few different values: the most commonly used values being left, right, and both."
+    },
+    {
+        "title": "Position",
+        "description": "By default every element has a position value of static, which means that it exists in the normal flow of a document and it doesn’t accept any box offset properties"
+    },
+    {
+        "def": {
+            "title": "Relative (position)",
+            "description": "relatively positioned elements, it’s important to know that the box offset properties identify where an element will be moved from given its original position it appears within the normal flow of a document !"
+        },
+        "subdefs": [
+            "When we position the element using the box offset properties, the element overlaps the element below it rather than moving that element down as the margin or padding properties would."
+        ]
+    },
+    {
+        "def": {
+            "title": "Absolute (position)",
+            "description": "absolute value for the position property is different from the relative value in that an element with a position value of absolute will not appear within the normal flow of a document, and the original space and position of the absolutely positioned element will not be preserved."
+        },
+        "subdefs": [
+            "Additionally, absolutely positioned elements are moved in relation to their closest relatively positioned parent element. ",
+            "if a relatively positioned parent element not exist, the absolutely positioned element will be positioned in relation to the &lt;body&gt; element"
+        ]
+    },
+    {
+        "title": "common propreties",
+        "description": "color, font-family, font-weight, font-variant, line-heigh, text-align, text-decoration, text-indent, box-shadow, text-transform, letter-spacing, word-spacing, background, background-color, background-image(with url(\"\")), background-repeat, background-position, background-size, background-clip, background-origin, list-style-type, list-style-position, background-attachment"
+    },
+    {
+        "title": "typeface",
+        "description": "is what we see. It is the artistic impression of how text looks, feels, and reads."
+    },
+    {
+        "title": "font",
+        "description": "is a file that contains a typeface. Using a font on a computer allows the computer toaccess the typeface."
+    },
+    {
+        "def": {
+            "title": "Line height",
+            "description": "The best practice for legibility is to set the line-height to around one and a half times our font-size property value."
+        },
+        "subdefs": [
+            "Line height may also be used to vertically center a single line of text within an element. Using the same property value for the line-height and height properties will vertically center the text"
+        ]
+    },
+    {
+        "def": {
+            "title": "Transition",
+            "description": ""
+        },
+        "subdefs": [
+            "transition: width 2s;",
+            "transition-timing-function: ease-in-out;",
+            "transition-delay: 0.5s;"
+        ]
+    },
+    {
+        "def": {
+            "title": "Animations",
+            "description": ""
+        },
+        "subdefs": [
+            "animation-name: example;",
+            "animation-duration: 2s;",
+            "animation-delay: 1s; (1 second delay before starting.)",
+            "animation-iteration-count: infinite; (continue to loop for ever.)",
+            "animation-direction: alternate; (alternate between running forwards and backwards.)",
+            "animation-timing-function: ease-in-out; (ease-in-out speed curve animation)"
+        ]
+    },
+    {
+        "title": "@keyframes",
+        "description": "definies an animation keyframes"
+    }
+]

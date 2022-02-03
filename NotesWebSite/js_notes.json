@@ -1,0 +1,4 @@
+[
+    "Inline (HTML element embedded) event handlers is considered a bad practice!",
+    "the keyword async before a function makes the function return a Promise the await keyword can only be used inside an async function"
+]

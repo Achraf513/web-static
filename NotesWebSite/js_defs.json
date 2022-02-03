@@ -1,0 +1,56 @@
+[
+    {
+        "def": {
+            "title": "Anonymous function",
+            "description": "anonymous function is simply a function without a name. Anonymous functions can either be used as a parameter for another function, or it can be turned into a function expression."
+        },
+        "subdefs": [
+            "We can add event listeners using the anonymous function : el.addEventListener(\"click\", function() { alert(\"Alert!\"); } );",
+            "When we turn it into a function expression, we assign the anonymous function to a variable. The variable name will then act as the function’s name.",
+            "Like anonymous functions, arrow functions can be turned into function expressions."
+        ]
+    },
+    {
+        "def": {
+            "title": "addEventListener",
+            "description": "we can set capturing to true"
+        },
+        "subdefs": [
+            "capturing will handle the outer (parent) elements event first, then the inner(child) elements",
+            "bubbling will handle the inner elements first"
+        ]
+    },
+    {
+        "def": {
+            "title": "JS async",
+            "description": ""
+        },
+        "subdefs": [
+            "async : makes a function return a Promise",
+            "await : makes a function wait for a Promise"
+        ]
+    },
+    {
+        "def": {
+            "title": "JS and HTML",
+            "description": ""
+        },
+        "subdefs": [
+            "The textContent proprety will return all text, including anything inside a hidden element",
+            "The innerText proprety will return all text, excluding anything inside a hidden element",
+            "The innerHTML proprety will return both text and any other HTML content inside the element",
+            "Js also provides us with getAttribute, setAttribute, hasAttribute"
+        ]
+    },
+    {
+        "def": {
+            "title": "Date",
+            "description": ""
+        },
+        "subdefs": [
+            "d.getFullYear() =&gt; returns the current year in 4 digits",
+            "d.getMonth() =&gt; gets the month (0-11) out of a date object.",
+            "d.setFullYear(2020) as the methode's name says."
+        ]
+    }
+]

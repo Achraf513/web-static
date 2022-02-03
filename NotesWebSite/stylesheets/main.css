@@ -1,0 +1,294 @@
+/* CSS Reset */
+/* http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol, ul {
+  list-style: none;
+}
+blockquote, q {
+  quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+a{
+    text-decoration: none;
+}
+
+/*------------------ Clearfix ------------------*/
+
+.group:before,
+.group:after {
+  content: "";
+  display: table;
+}
+.group:after {
+  clear: both;
+}
+.group {
+  clear: both;
+  *zoom: 1;
+}
+
+/*------------------ Custom styles ------------------*/
+html{
+    width: 100%;
+}
+body{
+  font: 400 15px/23px 'Montserrat', sans-serif;
+}
+
+/*------------------ Header ------------------*/
+.page-header{
+    z-index: 3;
+    background-image: linear-gradient(rgb(79, 121, 153),rgb(53, 84, 110));
+    color: white;
+    padding: 15px;
+    width: 100%;
+    box-sizing: border-box;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.4);
+}
+.logo{
+    margin: 0 10px;
+    float: left;
+    transition: 0.25s;
+}
+.logo a{
+    font-weight: 200;
+    font-style: italic;
+}
+.logo:hover{
+    transform: scale(1.1,1.1);
+}
+.logo a:hover{
+    color: #ffc57a !important;
+}
+.navbar{
+    float: right;
+}
+.navbar li{
+    margin: 0 10px;
+    display: inline-block;    
+    transition: 0.25s;
+}
+.lightText{
+    color: rgb(233, 255, 250);
+}
+.navbar a:hover{
+    color: #ffc57a !important;
+}
+.fixed{
+    position: fixed;
+}
+/*-----------------content-body--------------------*/
+.content-body{
+    height: 100vh !important;
+}
+.col-1-5{
+    display: inline-block;
+    height: 100vh !important;
+    width: 20%;
+    overflow-y: hidden;
+}
+.col-4-5{
+    display: inline-block;
+    height: 100vh !important;
+    width: 80%;
+    overflow-y: scroll;
+}
+.content-menu{
+    box-sizing: border-box;
+    background-color: rgba(238, 215, 219,0.5);
+    color: rgb(61, 57, 57);
+    font-weight: 500;
+}
+.content-menu-empty{
+    height: 52px;
+}
+.content-menu-data{
+    height: calc(100% - 100px) !important;
+    overflow-y: scroll;
+    padding: 20px 15px;
+}
+.content-menu-data hr{
+    margin-top: 15px;
+    border-top: 1px solid rgb(180, 131, 131);
+    margin-bottom: 15px;
+}
+.outer-ol{
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 35px;
+    margin-left: 5px;
+    text-align: left;
+}
+.inner-ol{
+    font-size: 15px;
+    line-height: 22px;
+    list-style-type:none;
+    text-align: left;
+}
+.inner-ol li{
+    font-size: 13px;
+    padding: 7px 20px;
+    border: 1px solid transparent;
+}
+.inner-ol li:hover{
+    border: 1px solid rgb(148, 180, 207);
+    color: #3c6991 ;
+    background-color: rgba(186, 206, 224, 0.8);
+    border-radius: 7px;
+    cursor: pointer;
+}
+/* width */
+::-webkit-scrollbar {
+    width: 15px;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    background: #ebebeb;
+  }
+  
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: rgb(189, 189, 189);
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: rgb(172, 172, 172);
+  }
+
+/*-----------------about-us------------------*/
+.p-15{
+    padding:15px;
+}
+.about-us{
+    padding: 115px 35px 55px 65px !important;
+    background-color: #e8f1fa;
+}
+.about-us h1{
+    font-weight: 200;
+    font-size: 40px;
+}
+.section-title{
+    margin-bottom: 40px;
+}
+.section-description{
+    font-size: 17px;
+    width: 95%;
+}
+.custom-shape-divider-top-1643876252 {
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+}
+
+.custom-shape-divider-top-1643876252 svg {
+    position: relative;
+    display: block;
+    width: calc(100% + 1.3px);
+    height: 30px;    
+    transform: rotateY(180deg);
+}
+
+.custom-shape-divider-top-1643876252 .shape-fill {
+    fill: #e8f1fa;
+}
+
+/*-----------------cours-section--------------------*/
+.p-15{
+    padding:15px;
+}
+.cours-section{
+    padding: 55px 35px 55px 65px !important;
+}
+.cours-section h1{
+    font-weight: 200;
+    font-size: 40px;
+}
+.definition{
+    margin-top: 5px;
+}
+.definition h2{
+    padding: 5px 0px;
+    padding-right: 10px;
+    font-weight: 600;
+    display: inline-block;
+}
+.definition p{
+    display: inline-block;
+}
+ul{
+    list-style-type:disc;
+}
+.pl-30{
+    padding-left: 30px;
+}
+.definition table{
+    margin-top: 5px;
+    margin-bottom: 10px;
+}
+th{
+    font-weight: 600;
+    background-color: rgb(201, 158, 158);
+}
+td,th{
+    text-align: left;
+    border: 1px solid rgb(82, 75, 75);  
+    padding: 10px;
+}
+tr:nth-child(even){
+    background-color: rgb(235, 207, 207);
+}
+.Note{
+    padding: 22px;
+    margin-top: 25px;
+    position: relative;
+    border: 1px solid rgb(180, 131, 131);
+    border-radius: 20px;
+}
+.Note h3{
+    font-size: 20px;
+    background-color: white;
+    padding: 0 10px;
+    position: absolute;
+    top: -12px;
+    left: 20px;
+}
