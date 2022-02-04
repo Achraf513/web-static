@@ -1,0 +1,358 @@
+/* CSS Reset */
+/* http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+body {
+  line-height: 1;
+  color: rgb(48, 48, 48);
+}
+ol, ul {
+  list-style: none;
+}
+blockquote, q {
+  quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+a{
+    cursor: pointer;
+    text-decoration: none;
+}
+
+/*------------------ Clearfix ------------------*/
+
+.group:before,
+.group:after {
+  content: "";
+  display: table;
+}
+.group:after {
+  clear: both;
+}
+.group {
+  clear: both;
+  *zoom: 1;
+}
+
+/*------------------ Custom styles ------------------*/
+html{
+    width: 100%;
+    height: 100%;
+}
+body{
+    height: 100%;
+    font: 400 15px/23px 'Montserrat', sans-serif;
+  background-color: rgb(249, 218, 255);
+}
+/*------------------ Header ------------------*/
+.page-header{
+    background-image: linear-gradient(rgb(153, 79, 134),rgb(110, 53, 98));
+    color: white;
+    padding: 15px;
+    width: 100%;
+    box-sizing: border-box;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.4);
+    position: fixed;
+    z-index: 2;
+}
+.logo{
+    margin: 0 10px;
+    float: left;
+    transition: 0.25s;
+}
+.logo a{
+    font-weight: 200;
+    font-style: italic;
+}
+.logo:hover{
+    transform: scale(1.1,1.1);
+}
+.logo a:hover{
+    color: #ffc57a !important;
+}
+.navbar{
+    float: right;
+}
+.navbar li{
+    margin: 0 10px;
+    display: inline-block;    
+    transition: 0.25s;
+}
+.lightText{
+    color: rgb(233, 255, 250);
+}
+.navbar a:hover{
+    color: #ffc57a !important;
+}
+/*------------------- Columns ------------------*/
+.col-1-5{
+  display: inline-block;
+  height: 75% !important;
+  width: 25%;
+  overflow-y: hidden;
+}
+.col-4-5{
+  display: inline-block;
+  height: 100% !important;
+  width: 75%;
+  overflow-y: scroll;
+}
+.hidden{
+  display: none;
+}
+/*-------------------- body Section -----------------------*/
+.bodySection{
+    padding-top: 75px;
+    padding-bottom: 75px;
+    box-sizing: border-box;
+}
+/*---------------------- Built sections --------------------------*/
+.section{
+    background-color: white;
+    width: 80%;
+    padding: 35px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+    border-radius: 15px;
+    margin-left: 10px; 
+}
+.main-finalSection{
+  padding-top: 75px;
+}
+.finalSection{
+  background-color: white;
+  width: 60%;
+  padding: 35px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+  border-radius: 15px;
+  margin: auto;
+}
+.child-section{
+    position: relative;
+    padding: 25px 35px;
+    margin-top: 15px;
+}
+.delIcon{
+  position: absolute;
+  cursor: pointer;
+  font-size: 18px;
+  top: 25px;
+  padding: 10px;
+  border-radius: 50%;
+  right: 25px;
+  color: rgb(82, 82, 82);
+}
+.delIcon:hover{
+  background-color: rgba(74, 47, 119,0.2);
+  color: rgb(124, 49, 108);
+}
+/*------------------------- tool-menu ---------------------*/
+.icons{
+  position: absolute;
+  top: 7px;
+  left: 5px;
+  font-size: 25px;
+  color: rgb(61, 61, 61);
+}
+.l-7{
+  left: 7px;
+}
+aside{
+  padding-top: 75px;
+  box-sizing: border-box;
+  position: relative;
+  top: -25%;
+}
+.tools-menu{
+  padding: 25px;
+  box-sizing: border-box;
+  height: 90% !important;
+  width: 80%;
+  background-color: white;
+  margin-left: 10%;
+  border-radius: 15px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+}
+.tool-menu-desc{
+  margin-bottom: 10px;
+}
+.tool-group{
+  cursor: pointer;
+  height: 40px;
+  display: block;
+  border: 1px solid white;
+  position: relative;
+}
+.tool-group:hover{
+  border: 1px solid rgb(74, 47, 119);
+  background-color: rgba(74, 47, 119, 0.1);
+  border-radius: 10px;
+}
+.tool-desc{
+  display: inline-block;
+  margin-left: 10px;
+  position: absolute;
+  top: 8px;
+  left: 35px;
+}
+/*------------------------- Input ---------------------*/
+input{
+  font-size: 17px;
+  margin-top: 15px;
+  color : rgb(48, 48, 48);
+}
+input[type="text"]{
+    border: none;
+    border-bottom: 1.5px solid rgb(253, 235, 248);
+    font-family: 'Montserrat', sans-serif;
+    width: 90%;
+}
+input[type="text"]:hover{
+  border-bottom: 1.5px solid rgb(153, 79, 134);
+}
+input[type="radio"],
+input[type="checkbox"]{
+    width: 20px;
+    height: 20px; 
+}
+input[type="text"]:focus{
+    border: none;
+    outline: none;
+    border-bottom: 1.5px solid rgb(153, 79, 134);
+}
+.title-input{
+    height: 50px;
+    width: 100%;
+    font-size: 50px;
+}
+.questionInput{
+  border: 1px solid rgb(202, 202, 202) !important;
+  border-radius: 10px;
+  padding: 10px;
+}
+.questionInput:hover,
+.questionInput:focus{
+  border: 1px solid rgb(153, 79, 134) !important;
+}
+.questionTextArea{
+  font-family: 'Montserrat', sans-serif;
+  margin-top: 15px;
+  font-size: 17px;
+  width: 90%;
+  min-height: 150px;
+  resize: none;
+}
+/*------------------------------Option elemnt-----------------------*/
+.optionContainer{
+  display: block;
+}
+.liOptionContainer{
+  margin-left: 25px;
+}
+.optionInput{
+  margin-left: 10px;
+  width: 80% !important;
+}
+.removeBtn{
+  background-color: transparent;
+  border: none;
+  height: 30px;
+  width: 30px;
+  padding: 5px;
+  color: rgb(88, 88, 88);
+  border-radius: 50%;
+  font-size: 18px;
+  cursor: pointer;
+  margin-left: 15px;
+}
+.removeBtn:hover{
+  color: rgb(124, 49, 108);
+  background-color: rgba(74, 47, 119,0.2);
+}
+.addOptionBtn{
+  font-size: 17px;
+  background-color: transparent;
+  border: none;
+  color: rgb(119, 119, 119);
+  height: 30px;
+  cursor: pointer;
+  padding: 15px 0;
+}
+.addOptionBtn:hover{
+  color: rgb(124, 49, 108);
+}
+.addIcon{
+  margin-left: 9px;
+  margin-right: 15px
+}
+.selectOptionContainer{
+  width: 60%;
+}
+ol,li{
+  list-style-type:decimal;
+}
+/*-------------------------------Scroll bar---------------------*/
+/* width */
+::-webkit-scrollbar {
+  width: 15px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #fafafa;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: rgb(189, 189, 189);
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: rgb(172, 172, 172);
+}
+
+.main-finalSection h1{
+  font-size: 55px;
+  padding: 20px 0;
+}
+.main-finalSection p{
+  line-height: 30px;
+  font-size: 20px;
+  padding: 10px 0 20px 0;
+}
+.question{
+  padding-bottom: 0 !important;
+}
