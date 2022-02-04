@@ -193,6 +193,18 @@ html_definitionsList.push(new AdvancedDefinition(
         "&lt;div&gt;s and &lt;span&gt;s actually don’t hold any semantic value. They exist for styling purposes only."
     ]
 ))
+html_definitionsList.push(new AdvancedDefinition(
+    new Definition("HTML Coding Practices", ""),
+    [
+       "Make Use of Semantic Elements",
+        "Use the Proper Document Structure",
+        "Keep the Syntax Organized",
+        "Use Practical ID & Class Values",
+        "Separate Content from Style",
+        "Avoid a Case of “Divitis",
+        "Continually Refactor Code"
+    ]
+))
 html_notesList.push("To change text direction and make the text go right-to-left. &lt;bdo dir=\"rtl\"&gt;&lt;/bdo&gt;")
 html_notesList.push("To display full abbreviation text : &lt;abbr title=\"World Health Organization\"&gt; WHO&lt;/abbr&gt;")
 html_notesList.push("The &lt;button&gt; element performs the same way as the &lt;input&gt; element with the type attribute value of submit")
@@ -326,6 +338,17 @@ css_definitionsList.push(new AdvancedDefinition(
 ))
 css_definitionsList.push(new Definition("@keyframes", "definies an animation keyframes"));
 
+css_definitionsList.push(new AdvancedDefinition(
+    new Definition("CSS Coding Practices", ""),
+    [
+        "Organize Code with Comments",
+        "Write CSS Using Multiple Lines & Spaces",
+        "Use Proper Class Names",
+        "Use Shorthand Properties & Values",
+        "Drop Units from Zero Values",
+        "Modularize Styles for Reuse"
+    ]
+))
 
 
 css_notesList.push("All styles will cascade from the top of our style sheet to the bottom of our style sheet. There are, however, times where the cascade doesn’t play so nicely. Those times occur when different types of selectors are used and the specificity of those selectors breaks the cascade")
