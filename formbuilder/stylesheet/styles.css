@@ -73,8 +73,9 @@ html{
     height: 100%;
 }
 body{
-    height: 100%;
-    font: 400 15px/23px 'Montserrat', sans-serif;
+  overflow-y: hidden;
+  height: 100%;
+  font: 400 15px/23px 'Montserrat', sans-serif;
   background-color: rgb(249, 218, 255);
 }
 /*------------------ Header ------------------*/
@@ -143,7 +144,9 @@ body{
 .section{
     background-color: white;
     width: 80%;
+    box-sizing: border-box;
     padding: 35px;
+    padding: 35px 35px 45px 45px;
     box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
     border-radius: 15px;
     margin-left: 10px; 
@@ -154,19 +157,24 @@ body{
 .finalSection{
   background-color: white;
   width: 60%;
+  box-sizing: border-box;
   padding: 35px;
   box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
   border-radius: 15px;
   margin: auto;
 }
 .child-section{
+    transition: 0.65s;
     position: relative;
-    padding: 25px 35px;
+    top: 0;
+    box-sizing: border-box;
+    padding: 15px 35px 25px 45px;
     margin-top: 15px;
 }
 .delIcon{
   position: absolute;
   cursor: pointer;
+  visibility: hidden;
   font-size: 18px;
   top: 25px;
   padding: 10px;
@@ -229,6 +237,7 @@ aside{
 }
 /*------------------------- Input ---------------------*/
 input{
+  background-color: transparent;
   font-size: 17px;
   margin-top: 15px;
   color : rgb(48, 48, 48);
@@ -268,6 +277,7 @@ input[type="text"]:focus{
 }
 .questionTextArea{
   font-family: 'Montserrat', sans-serif;
+  background-color: transparent;
   margin-top: 15px;
   font-size: 17px;
   width: 90%;
@@ -289,6 +299,7 @@ input[type="text"]:focus{
   background-color: transparent;
   border: none;
   height: 30px;
+  visibility: hidden;
   width: 30px;
   padding: 5px;
   color: rgb(88, 88, 88);
@@ -323,6 +334,33 @@ input[type="text"]:focus{
 ol,li{
   list-style-type:decimal;
 }
+.optionLabel{
+  font-size: 17px;
+  display: inline-block;
+  position: relative;
+  bottom: 3px;
+  left: 10px;
+  overflow-wrap: break-word;
+  width: 90% !important;
+}
+.finalOptionContainer{
+  display: block;
+  padding: 7px;
+  padding-left: 20px;
+  position: relative;
+}
+.finalMultiInput{
+  top: -11px;
+  left: 0px;
+  position: absolute;
+}
+.formResult{
+  height: 100vh;
+  overflow-y: scroll;
+}
+form{
+  padding-bottom: 105px;
+}
 /*-------------------------------Scroll bar---------------------*/
 /* width */
 ::-webkit-scrollbar {
@@ -355,4 +393,134 @@ ol,li{
 }
 .question{
   padding-bottom: 0 !important;
+}
+.finalQuestion{
+  padding-bottom: 5 !important;
+}
+.dropDownMenu{
+  border: 1px solid rgb(202, 202, 202);
+  width: 100%;
+  padding: 10px;
+  text-overflow: ellipsis;
+  font-size: 17px;
+  font-family: 'Montserrat', sans-serif;
+}
+.dropDownMenu:hover,
+.dropDownMenu:focus{
+  border:1px solid rgb(153, 79, 134);
+}
+option{
+  width: 100 px !important;
+  text-overflow: ellipsis;
+  overflow-x: scroll;
+}
+
+@media only screen and (max-width: 1150px)  {
+  .col-1-5{
+    width: 30%;
+  }
+  .col-4-5{
+    width: 70%;
+  }
+}
+
+/* The Modal (background) */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 3;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.4);
+}
+
+/* Modal Content/Box */
+.modal-content {
+    background-color: #ffffff;
+    border-radius: 25px;
+    margin: 20vh auto;
+    padding: 20px;
+    font-size: 18px;
+    border: 1px solid rgb(100, 100, 100);
+    width: 400px;
+    height: 80px;
+    /* Could be more or less, depending on screen size */
+}
+.modal-content p{
+  width: 70%;
+}
+/* The Close Button */
+.closeXbtn {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.closeXbtn:hover,
+.closeXbtn:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.formControlSection {
+    float: right;
+    padding: 10px 0;
+}
+.modalBtns{
+  cursor: pointer;
+  border: none;
+  padding: 7px 15px;
+  background-color: rgb(180, 180, 180);
+  border-radius: 15px;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 17px;
+}
+.yesBtn{
+  background-color: rgb(228, 142, 121);
+}
+.arrows{
+  font-size: 12px;
+  color: grey;
+  visibility: hidden;
+  cursor: pointer;
+}
+.arrows:hover{
+  color: rgb(124, 49, 108);
+}
+.upArrow{
+  position: absolute;
+  left: 10px;
+  top: 10px;
+}
+.downArrow{
+  position: absolute;
+  left: 10px;
+  bottom: 10px;
+}
+.child-section:hover .arrows{
+  visibility: visible;
+}
+.child-section:hover .removeBtn{
+  visibility: visible;
+}
+.child-section:hover .delIcon{
+  visibility: visible;
+}
+#sendFormResponse{
+  cursor: pointer;
+  border: none;
+  padding: 12px 35px;
+  float: right;
+  margin-right: 20%;
+  margin-top: 15px;
+  background-color: rgb(153, 79, 134);
+  box-shadow: 0 0 4px rgb(88, 88, 88);
+  color: white;
+  border-radius: 15px;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 14px;
 }

@@ -12,66 +12,74 @@
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,600;1,300&display=swap"
         rel="stylesheet">
     <link rel="stylesheet" href="stylesheet/styles.css">
-
 </head>
-
-<body>
-    <header class="group page-header formBuilderTool">
-        <h1 class="logo">
-            <a class="lightText">FormBuilder</a>
-        </h1>
-        <nav class="navbar">
-            <ul>
-                <li>
-                    <a class="lightText"><i class="fas fa-undo"></i></a>
-                </li><!--
-                --><li>
-                    <a class="lightText"><i class="fas fa-redo"></i></a>
-                </li><!--
-                --><li>
-                    <a class="lightText" id="submitFormBtn">Submit</a>
-                </li>
-            </ul>
-        </nav>
-    </header>
-    <aside class="col-1-5 formBuilderTool">
-        <section class="tools-menu">
-            <p class="tool-menu-desc">Select one of the following options to add a new question section</p>
-            <div class="tool-group" id="singleChoiceBtn">
-                <i class="far fa-dot-circle icons"></i><p class="tool-desc">Single choice</p>
-            </div>
-            <div class="tool-group" id="multiChoiceBtn">
-                <i class="far fa-check-square icons"></i><p class="tool-desc">Multiple choice</p>
-            </div>
-            <div class="tool-group" id="dropDownMenuBtn">
-                <i class="fas fa-caret-down icons l-7"></i><p class="tool-desc">Dropdown menu</p>
-            </div>
-            <div class="tool-group" id="shortAnswerBtn">
-                <i class="fas fa-grip-lines icons"></i><p class="tool-desc">short answer</p>
-            </div>
-            <div class="tool-group" id="longAnswerBtn">
-                <i class="fas fa-align-justify icons l-7"></i><p class="tool-desc">long answer</p>
-            </div>
-        </section>
-    </aside><!--
-    --><section class="bodySection col-4-5 formBuilderTool" id="bodySection">
-        <section id="title-section" class="main-section section">
-            <input id="form-title-input" class="title-input" type="text" placeholder="Form title here" value="Form title here">
-            <input id="form-desc-input" class="" type="text" placeholder="Form description here" value="Form description here">
-        </section>
-        <section id="parent-section" class="parent-section">
-        </section>
-    </section>
-    <section id="formBuilderResult" class="hidden">
-        <header class="group page-header">
+    <body>
+        <header class="group page-header formBuilderTool">
             <h1 class="logo">
-                <a class="lightText" id="returnToFormBuilder">FormBuilder</a>
+                <a class="lightText">FormBuilder</a>
             </h1>
+            <nav class="navbar">
+                <ul>
+                    <li>
+                        <a class="lightText" id="submitFormBtn">Submit</a>
+                    </li>
+                </ul>
+            </nav>
         </header>
-        <section id="finalForm-section" class="parent-section main-finalSection">
+        <aside class="col-1-5 formBuilderTool">
+            <section class="tools-menu">
+                <p class="tool-menu-desc">Select one of the following options to add a new question section</p>
+                <div class="tool-group" id="singleChoiceBtn">
+                    <i class="far fa-dot-circle icons"></i><p class="tool-desc">Single choice</p>
+                </div>
+                <div class="tool-group" id="multiChoiceBtn">
+                    <i class="far fa-check-square icons"></i><p class="tool-desc">Multiple choice</p>
+                </div>
+                <div class="tool-group" id="dropDownMenuBtn">
+                    <i class="fas fa-caret-down icons l-7"></i><p class="tool-desc">Dropdown menu</p>
+                </div>
+                <div class="tool-group" id="shortAnswerBtn">
+                    <i class="fas fa-grip-lines icons"></i><p class="tool-desc">short answer</p>
+                </div>
+                <div class="tool-group" id="longAnswerBtn">
+                    <i class="fas fa-align-justify icons l-7"></i><p class="tool-desc">long answer</p>
+                </div>
+            </section>
+        </aside><!--
+        --><section class="bodySection col-4-5 formBuilderTool" id="bodySection">
+            <section id="title-section" class="main-section section">
+                <input id="form-title-input" class="title-input" type="text" placeholder="Form title here" value="Form title here">
+                <input id="form-desc-input" class="" type="text" placeholder="Form description here" value="Form description here">
+            </section>
+            <section id="parent-section" class="parent-section">
+            </section>
         </section>
-    </section>
-    <script src="main.js" type="module"></script>
-</body>
-
+        <section id="formBuilderResult" class="formResult hidden">
+            <header class="group page-header">
+                <h1 class="logo">
+                    <a class="lightText" id="returnToFormBuilder">FormBuilder</a>
+                </h1>
+            </header>
+            <form>
+                <section id="finalForm-section" class="parent-section main-finalSection">
+                </section>
+                <button id="sendFormResponse">Send</button>
+            </form>
+        </section>
+        <!-- The Modal -->
+        <div id="deleteModal" class="modal">
+            <!-- Modal content -->
+            <div class="modal-content">
+                <div>
+                    <span class="closeXbtn">&times;</span>
+                    <p>Are you sure you want to delete this section ?</p>
+                    <section class="formControlSection">
+                        <button id="closeYesbtn" class="modalBtns yesBtn">Yes</button>
+                        <button id="closeNobtn" class="modalBtns noBtn">No</button>
+                    </section>
+                </div>
+            </div>
+        </div>
+        <script src="main.js" type="module"></script>
+    </body>
 </html>

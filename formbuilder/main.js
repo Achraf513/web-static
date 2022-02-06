@@ -79,7 +79,6 @@ if(longAnswerBtn != undefined){
 
 function showFinalResult(){
     const formBuilders = document.getElementsByClassName("formBuilderTool");
-    console.log(SharedPref)
     for (let i = 0; i < formBuilders.length; i++) {
         const element = formBuilders[i];
         element.classList.add("hidden");
@@ -112,3 +111,25 @@ formDescInput.addEventListener("input",(event)=>{
     SharedPref.formDesc = event.target.value;
 });
 
+// --------------------Modal configuration-----------------------
+
+var modal = document.getElementById("deleteModal");
+var modalXCloseBtn = document.getElementsByClassName("closeXbtn")[0];
+var modalNoCloseBtn = document.getElementById("closeNobtn")
+var modalYesCloseBtn = document.getElementById("closeYesbtn")
+
+modalXCloseBtn.onclick = function () {
+    modal.style.display = "none";
+}
+modalNoCloseBtn.onclick = function () {
+    modal.style.display = "none";
+}
+modalYesCloseBtn.onclick = function () {
+    SharedPref.removeSectionData();
+    modal.style.display = "none";
+}
+window.onclick = function (event) {
+    if (event.target == modal) {
+        modal.style.display = "none";
+    }
+}
